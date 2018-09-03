@@ -2,7 +2,7 @@ module.exports = class Node {
 
   constructor(content) {
     this.content = content;
-    this.children = [];
+    this.children = content.children || [];
     this.length = 0;
   }
 
